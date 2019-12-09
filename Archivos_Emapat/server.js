@@ -8,7 +8,8 @@ const fs = require('fs');
 
 
 const server = express();
-__dirname = '/home/srvavalon/web/Emapat/Archivos_Emapat/subidas/';
+__dirname = '/opt/emapat/Emapat_AMD/Archivos_Emapat/subidas/';
+
 /* C:\Users\Jhon\Desktop\otass\Aplicativo\Emapat-Pucallpa\Archivos_Emapat\subidas */
 var corsOptions = {
   origin: "*",
