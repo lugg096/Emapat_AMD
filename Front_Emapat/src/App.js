@@ -14,7 +14,7 @@ class App extends Component {
             isLogged: false,
             isAdmin: false,
             token: '',
-            hostname: 'http://190.116.37.106:8080' //HAY QUE AÑADIR UN HOSTNAME PARA QUE FUNCIONE LA APLICACION WEB
+            hostname: 'http://190.116.37.106:7080' //HAY QUE AÑADIR UN HOSTNAME PARA QUE FUNCIONE LA APLICACION WEB
         }
         this.handleChangeIsAdmin = this.handleChangeIsAdmin.bind(this);
         this.handleChangeIsLogged = this.handleChangeIsLogged.bind(this);

@@ -24,7 +24,7 @@ class App extends Component {
             tipoConsulta : "tabla",
             acumulado : "1",
             empezarConsulta : false,
-            hostname : "http://179.43.88.86:8080", //HAY QUE AÑADIR UN HOSTNAME PARA QUE FUNCIONE LA APLICACION WEB
+            hostname : "http://190.116.37.106:7080", //HAY QUE AÑADIR UN HOSTNAME PARA QUE FUNCIONE LA APLICACION WEB
             eps : "",
             epsNombre : "",
             local : "",
