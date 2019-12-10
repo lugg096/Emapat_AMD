@@ -1324,7 +1324,7 @@ class AppPrimary extends Component {
 
                 {this.state.tipoReal === "3" && this.state.modalbool?
                     (<ModalReportesRegulatorios vaciarModal={this.vaciarModal} opcionReporte={this.state.opcionReporte} 
-                        hostname={'http://localhost:8080'} eps={this.state.eps} local={this.state.local} periodo={this.state.periodo+this.state.mes}/>):(null)
+                        hostname={'http://190.116.37.106:7080'} eps={this.state.eps} local={this.state.local} periodo={this.state.periodo+this.state.mes}/>):(null)
                 }
 
             </div>
