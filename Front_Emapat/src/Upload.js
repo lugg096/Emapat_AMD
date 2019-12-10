@@ -76,7 +76,7 @@ class Upload extends Component {
 
       // Diciendole al backend donde xu hay que guardar
 
-      req.open("POST", "http://190.116.37.106:7080/subir");
+      req.open("POST", "http://190.116.37.106:7000/subir");
       req.send(formData);
     });
   }

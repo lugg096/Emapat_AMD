@@ -115,7 +115,7 @@ class AppPrimary extends Component {
     }
 
     onTestSaveFile(e) {
-        FileSaver.saveAs("http://190.116.37.106:7080/bajar/"+this.state.eps+"/"+e, e);
+        FileSaver.saveAs("http://190.116.37.106:7000/bajar/"+this.state.eps+"/"+e, e);
     }
 
     cerrarModal() {
@@ -888,7 +888,7 @@ class AppPrimary extends Component {
         console.log('funcion',this.state.eps);
         this.setState({ verArchivos : true});
         if(this.state.epsNombre!=""){
-        fetch(`http://190.116.37.106:7080/ver/${this.state.eps}`,{
+        fetch(`http://190.116.37.106:7000/ver/${this.state.eps}`,{
                 method : 'GET',
                 headers : {
                     'Accept' : '*/*',
@@ -908,7 +908,7 @@ class AppPrimary extends Component {
 
     deleteArchivos(e) {
         console.log('borrar',e);
-        fetch(`http://190.116.37.106:7080/${this.state.eps}/${e}`,{
+        fetch(`http://190.116.37.106:7000/${this.state.eps}/${e}`,{
                 method : 'DELETE',
                 headers : {
                     'Accept' : '*/*',
@@ -927,7 +927,7 @@ class AppPrimary extends Component {
         let reader = new FileReader();
         reader.readAsDataURL(files[0]);
         reader.onload=(e)=>{
-        const url= "http://localhost:3040/archivos";
+        const url= "http://190.116.37.106:7000/archivos";/*xxxxxx*/ 
         const formData= {file : e.target.result}
         return post(url,formData)
         .then(response => console.log("result",response))
