@@ -115,7 +115,7 @@ class AppPrimary extends Component {
     }
 
     onTestSaveFile(e) {
-        FileSaver.saveAs("http://localhost:8000/bajar/"+this.state.eps+"/"+e, e);
+        FileSaver.saveAs("http://190.116.37.106:7080/bajar/"+this.state.eps+"/"+e, e);
     }
 
     cerrarModal() {
@@ -888,7 +888,7 @@ class AppPrimary extends Component {
         console.log('funcion',this.state.eps);
         this.setState({ verArchivos : true});
         if(this.state.epsNombre!=""){
-        fetch(`http://localhost:8000/ver/${this.state.eps}`,{
+        fetch(`http://190.116.37.106:7080/ver/${this.state.eps}`,{
                 method : 'GET',
                 headers : {
                     'Accept' : '*/*',
@@ -908,7 +908,7 @@ class AppPrimary extends Component {
 
     deleteArchivos(e) {
         console.log('borrar',e);
-        fetch(`http://localhost:8000/${this.state.eps}/${e}`,{
+        fetch(`http://190.116.37.106:7080/${this.state.eps}/${e}`,{
                 method : 'DELETE',
                 headers : {
                     'Accept' : '*/*',
